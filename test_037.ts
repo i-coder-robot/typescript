@@ -10,10 +10,10 @@ let result = Go<string>("老王")
 let result2 = Go<number>(666)
 // let result2 = Go(666)
 
-function Log<T>(msg:T[]):T[]{
-    console.log(msg.length)
-    return msg
-}
+// function Log<T>(msg:T[]):T[]{
+//     console.log(msg.length)
+//     return msg
+// }
 
 //泛型函数
 // let MyLog:<T>(msg:T)=>T=Log
