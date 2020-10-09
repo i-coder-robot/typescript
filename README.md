@@ -1,4 +1,6 @@
-# typescript
+# 2小时快速上手TypeScript所有知识点，0基础进击到高级前端，迈向加薪的未来
+
+[视频教程](https://www.bilibili.com/video/BV19p4y1a7Yj/) 
 
 全局安装typescript
 yarn global add typescript
