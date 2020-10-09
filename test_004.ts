@@ -10,15 +10,15 @@ class UserModel
     }
 }
 
-interface Person{
+interface Person1{
     firstName:string
     lastName:string
 }
 
 let user4 = new UserModel("欢喜","哥")
 
-function Hello4(person:Person){
-    return "Hello "+person.firstName+''+person.lastName
+function Hello4(person:Person1){
+    return "你好 "+person.firstName+''+person.lastName
 }
 
 console.log(Hello4(user4))

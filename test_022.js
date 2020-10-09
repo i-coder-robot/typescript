@@ -1,5 +1,4 @@
 //接口
-// 额外属性检查
 var findUser;
 findUser = function (userId) {
     var userIds = ["87", "66", "99", "2"];

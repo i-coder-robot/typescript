@@ -14,6 +14,6 @@ interface MsgValue{
 function printMessage(o:MsgValue){
     console.log(o.msg)
 }
-let obj1={size:100,msg:"今天晚上不加班，去吃大餐"}
+let obj1={size:100,msg:"今天晚上不加班，去吃大餐,高兴啊~"}
 
 printMessage(obj1)

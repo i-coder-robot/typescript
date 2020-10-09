@@ -16,7 +16,7 @@ let result2 = Go<number>(666)
 // }
 
 //泛型函数
-// let MyLog:<T>(msg:T)=>T=Log
+// let MyLog:<T>(msg:T[])=>T[]=Log
 
 // interface FnInterface<T> {
 //     <T>(msg:T):T
@@ -42,3 +42,4 @@ v2.do=function (a,b){
 }
 
 console.log(v2.do("老王",",常来玩儿啊"))
+console.log(v.do(10,6))

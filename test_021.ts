@@ -21,7 +21,8 @@ function Create(sconfig: SquareConfig): RoundSquare {
     return newSquare
 }
 
-let mySquare  = Create({color:'orange'})
+let mySquare  = Create({color:'orange',x:6})
+console.log(mySquare)
 
 //只读属性
 interface  Point{

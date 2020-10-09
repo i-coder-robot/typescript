@@ -39,7 +39,7 @@ for (var i = 0; i < 3; i++) {
 //3
 //3
 //3
-// 如何解决
+// 如何解决？ 使用立即执行行数解决
 for (var i = 0; i < 3; i++) {
     (function (i) {
         setTimeout(function () {
@@ -47,5 +47,3 @@ for (var i = 0; i < 3; i++) {
         }, 1000);
     })(i);
 }
-// let
-// const

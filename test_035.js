@@ -20,7 +20,7 @@
 // this就指向了global，而global.nums是没有这个属性的，所以是undefined,
 // 下面this.nums[rand]访问下标就会报错。TS可以解决这个问题，是把function变成箭头函数
 // 箭头函数，是保存了创建时候的this值。
-var randomPoint3 = {
+var randomPoint2 = {
     nums: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
     createNum: function () {
         var _this = this;
@@ -33,6 +33,22 @@ var randomPoint3 = {
         };
     }
 };
-var getNum3 = randomPoint3.createNum();
-var num3 = getNum3();
-console.log(num3['num']);
+var getNum2 = randomPoint2.createNum();
+var num2 = getNum2();
+console.log(num2['num']);
+var Handler = /** @class */ (function () {
+    function Handler() {
+        var _this = this;
+        this.onClickCool = function (e) {
+            //this对应定义时候的Handler
+            _this.type = e.type;
+        };
+    }
+    return Handler;
+}());
+var h = new Handler();
+var uiController = {
+    addClickListener: function () {
+    }
+};
+uiController.addClickListener(h.onClickCool);

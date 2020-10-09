@@ -13,3 +13,4 @@ var day = Week.Sunday;
 console.log(day);
 var dayName = Week[5];
 console.log(dayName);
+//可以看一下生成的JS文件

@@ -9,4 +9,4 @@ class Man{
 }
 
 let zhao=new Man("老赵")
-zhao.SayHello()
+console.log(zhao.SayHello())

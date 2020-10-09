@@ -1,5 +1,5 @@
 //存取器
-let password = '123456ß'
+let password = '1234567'
 
 class Person {
     //通常用一个下划线，表示私有属性

@@ -2,6 +2,7 @@
 var Post = /** @class */ (function () {
     function Post() {
     }
+    // name:string
     Post.prototype.Increment = function () {
         Post.count++;
         console.log(Post.count);

@@ -1,3 +1,4 @@
+// 基础类型
 var isFinished = false;
 console.log(isFinished);
 var age = 20;

@@ -1,4 +1,5 @@
 //解构
+// 数组解构
 //arr1是数组
 var arr1 = [66, 77];
 var one, two = arr1;

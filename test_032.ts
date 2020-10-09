@@ -2,7 +2,7 @@
 
 class Post{
     static count = 0
-
+    // name:string
     Increment(){
         Post.count++
         console.log(Post.count)

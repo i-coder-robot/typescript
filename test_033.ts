@@ -26,8 +26,10 @@ class Student extends  Human{
     }
 }
 
-let s:Human= new Student("小王")
+let s = new Student("小王")
 
 s.printName()
 s.sayHello()
+s.readBook()
+
 // (s as Student).readBook()

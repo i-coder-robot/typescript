@@ -1,4 +1,3 @@
-//类的继承
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -12,27 +11,31 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-//类继承类
-var Animal = /** @class */ (function () {
-    function Animal(name) {
+//抽象类
+var Human = /** @class */ (function () {
+    function Human(name) {
         this.name = name;
     }
-    Animal.prototype.move = function (distance) {
-        if (distance === void 0) { distance = 0; }
-        console.log(this.name + "\u8DD1\u4E86" + distance + "\u7C73");
+    Human.prototype.printName = function () {
+        console.log("\u6211\u662F" + this.name);
     };
-    return Animal;
+    return Human;
 }());
-var Dog = /** @class */ (function (_super) {
-    __extends(Dog, _super);
-    function Dog(name) {
+var Student = /** @class */ (function (_super) {
+    __extends(Student, _super);
+    function Student(name) {
         return _super.call(this, name) || this;
     }
-    Dog.prototype.eat = function () {
-        console.log(this.name + ",\u5728\u5403\u996D...");
+    Student.prototype.sayHello = function () {
+        console.log("大家好~");
     };
-    return Dog;
-}(Animal));
-var dog = new Dog("大黄");
-dog.eat();
-dog.move(20);
+    Student.prototype.readBook = function () {
+        console.log("正在读书...");
+    };
+    return Student;
+}(Human));
+var s = new Student("小王");
+s.printName();
+s.sayHello();
+s.readBook();
+// (s as Student).readBook()

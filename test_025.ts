@@ -18,3 +18,4 @@ let square = {} as Square
 square.color = 'orange'
 square.border = 1
 square.area = 10
+console.log(square)

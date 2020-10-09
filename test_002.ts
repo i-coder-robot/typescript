@@ -4,4 +4,4 @@ function Hello2(name:string){
 
 let user2 = '欢喜哥'
 // 类型不对，参数个数传的不对，都不行
-console.log(Hello(user2))
+console.log(Hello2(user2))

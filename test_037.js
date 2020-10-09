@@ -7,12 +7,12 @@ var result = Go("老王");
 // let result = Go("老王")
 var result2 = Go(666);
 // let result2 = Go(666)
-function Log(msg) {
-    console.log(msg.length);
-    return msg;
-}
+// function Log<T>(msg:T[]):T[]{
+//     console.log(msg.length)
+//     return msg
+// }
 //泛型函数
-// let MyLog:<T>(msg:T)=>T=Log
+// let MyLog:<T>(msg:T[])=>T[]=Log
 // interface FnInterface<T> {
 //     <T>(msg:T):T
 // }
@@ -25,12 +25,13 @@ var Make = /** @class */ (function () {
 }());
 var v = new Make();
 v.defaultValue = 666;
-v.do = function (a, b) {
+v["do"] = function (a, b) {
     return a * b;
 };
 var v2 = new Make();
 v2.defaultValue = '';
-v2.do = function (a, b) {
+v2["do"] = function (a, b) {
     return a + b;
 };
-console.log(v2.do("老王", "常来玩儿啊"));
+console.log(v2["do"]("老王", ",常来玩儿啊"));
+console.log(v["do"](10, 6));

@@ -14,6 +14,7 @@ var g = ff()
 console.log(g())
 
 function Completed(isDone){
+    // var x
     if (isDone){
         var x= 100
     }

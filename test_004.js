@@ -8,6 +8,6 @@ var UserModel = /** @class */ (function () {
 }());
 var user4 = new UserModel("欢喜", "哥");
 function Hello4(person) {
-    return "Hello " + person.firstName + '' + person.lastName;
+    return "你好 " + person.firstName + '' + person.lastName;
 }
 console.log(Hello4(user4));
